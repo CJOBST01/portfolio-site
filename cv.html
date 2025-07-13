@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Obst - Digital CV</title>
+    <link rel="stylesheet" href="styles/cv-styles.css" />
+
+    <!-- Optional: Included for performance optimization (not required for functionality) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Required: Loads the Roboto font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Shared site header -->
+      <header class="site-header">
+        <a href="index.html" class="brand">Chris Obst</a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Chris Obst</h1>
+      <img
+        src="images/imgforcv.jpg"
+        alt="An image of Chris Obst"
+        class="profile-img"
+        width="200"
+        height="200"
+      />
+      <p>
+        Election Administrator |
+        <b>Full-Stack Web Developer <em>In Training</em></b>
+      </p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#tooltable">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- I chose not to add class attributes to sections to preserve semantic clarity and avoid unnecessary abstraction, in line with the project's scope. -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I’m a detail-oriented professional with a background in public service
+          and a growing expertise in web development. I bring a strong track
+          record of managing complex workflows, streamlining processes, and
+          delivering clear, user-focused solutions. Currently transitioning into
+          tech, I’m leveraging my experience in administration and project
+          coordination to build tools that are intuitive, efficient, and
+          impactful. I thrive in environments where clarity, precision, and a
+          commitment to continuous improvement matter.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <article>
+          <h3>Election Administrator – Jefferson County Clerk's Office</h3>
+          <button class="toggle-btn" onclick="toggleDetails(this)">
+            Show Details
+          </button>
+          <div class="details" style="display: none">
+            <p><em>May 2022 – Present</em></p>
+            <ul>
+              <li>
+                Ensure efficient, accurate, and legally compliant administration
+                of elections in a county with over 650,000 registered voters.
+              </li>
+              <li>
+                Manage candidate filing processes, including ballot position
+                drawing, financial tracking, and certificate generation.
+              </li>
+              <li>
+                Respond to Open Records Requests with precision and
+                transparency, often fulfilling complex queries without
+                escalation.
+              </li>
+              <li>
+                Develop internal tools and documentation to streamline
+                workflows, reduce redundancy, and improve data integrity.
+              </li>
+              <li>
+                Serve as a key liaison to state and local agencies, maintaining
+                consistent communication and operational coordination.
+              </li>
+              <li>
+                Draft and distribute official public notices, instructional
+                materials, and legal correspondence related to elections and
+                filings.
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h3>Produce Specialist – Various Retail Environments</h3>
+          <button class="toggle-btn" onclick="toggleDetails(this)">
+            Show Details
+          </button>
+          <div class="details" style="display: none">
+            <p><em>2014 – 2022</em></p>
+            <ul>
+              <li>
+                Created high-impact, visually compelling produce displays
+                tailored to customer behavior and seasonal trends.
+              </li>
+              <li>
+                Maximized sales and minimized waste through strategic rotation,
+                inventory management, and aesthetic merchandising.
+              </li>
+              <li>
+                Trained and supervised team members on quality control,
+                presentation standards, and customer engagement.
+              </li>
+              <li>
+                Collaborated with department managers and buyers to forecast
+                demand and execute promotional campaigns.
+              </li>
+              <li>
+                Maintained deep product knowledge, including sourcing, storage,
+                and peak quality timing for high-end and specialty produce.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article>
+          <h3>Full-Stack Development Projects</h3>
+          <p>
+            <em
+              >All work listed below can be found on my
+              <a href="https://github.com/CJOBST01">Github profile!</a> Be sure
+              to check in often to see my newest updates!</em
+            >
+          </p>
+          <button class="toggle-btn" onclick="toggleDetails(this)">
+            Show Details
+          </button>
+          <div class="details" style="display: none">
+            <ul>
+              <li>
+                <strong>Digital CV Site:</strong> A fully responsive portfolio
+                with contact form integration, section toggling, and clean
+                mobile-first design. You're seeing it, right now!
+              </li>
+              <li>
+                <strong>Version Control:</strong> All projects tracked with Git
+                and published to GitHub using organized commits, feature
+                branching, and clear commit messages.
+              </li>
+              <li>
+                <strong>Maze Solver Game:</strong> JavaScript-based pathfinding
+                visualizer with a responsive grid, user-placed obstacles, and
+                real-time path calculation.
+              </li>
+              <li>
+                <strong>Sarcastic Text Generator:</strong> Humorous utility
+                built with DOM manipulation and event listeners to convert user
+                input into alternating case text.
+              </li>
+              <li>
+                <strong>Blind-Tasting Submission App:</strong> A web application
+                that allows my client's participants to submit their guesses for
+                blind beverage tastings.
+              </li>
+              <li>
+                Actively expanding project scope while refining UI/UX,
+                JavaScript logic, and integration with third-party tools and
+                APIs.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <h3>SpringBoard - June 2025 Cohort</h3>
+        <ol>
+          <li>
+            Top Performing student in the Cohort, displaying top-level
+            initiative and optimization.
+          </li>
+          <li>
+            Currently progressing through Full-Stack Engineering curriculum
+          </li>
+          <li>Planned graduation: April 2026</li>
+        </ol>
+        <h3>freeCodeCamp</h3>
+        <ul>
+          <li>
+            Completed
+            <a
+              href="https://www.freecodecamp.org/certification/CJOBST/responsive-web-design"
+              >responsive web design certification</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="tooltable">
+        <h2>Tools</h2>
+        <table>
+          <caption>
+            Tool Proficiencies
+          </caption>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Description</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Tool">VS Code</td>
+              <td data-label="Description">
+                A free source-code editor by Microsoft for Windows, Linux, and
+                macOS.
+              </td>
+              <td data-label="Proficiency">Expert</td>
+            </tr>
+            <tr>
+              <td data-label="Tool">Slack</td>
+              <td data-label="Description">
+                A collaboration and communication hub focused on professional
+                output.
+              </td>
+              <td data-label="Proficiency">Expert</td>
+            </tr>
+            <tr>
+              <td data-label="Tool">AI-Assisted Research</td>
+              <td data-label="Description">
+                Use of advanced large language models (LLMs) to enhance
+                productivity and decision-making.
+              </td>
+              <td data-label="Proficiency">Expert</td>
+            </tr>
+            <tr>
+              <td data-label="Tool">Git</td>
+              <td data-label="Description">
+                A distributed system for tracking file changes and coordinating
+                collaborative development.
+              </td>
+              <td data-label="Proficiency">Intermediate</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                <i
+                  >I’m committed to continuous growth and regularly pursue
+                  opportunities to deepen my mastery of these tools—and
+                  others—as part of an ongoing investment in technical
+                  excellence.</i
+                >
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:502chris502@gmail.com"
+              ><img src="images/mail.svg" alt="" /> 502chris502@gmail.com</a
+            >
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/christopher-obst-72bb23355/"
+              ><img src="images/linkedin.svg" alt="" />
+              LinkedIn.com/in/christopher-obst-72bb23355</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/cjobst01"
+              ><img src="images/github.svg" alt="" /> github.com/CJOBST01</a
+            >
+          </li>
+          <!-- Icons are decorative enhancements; alt is left empty to avoid redundancy for screen readers -->
+        </ul>
+      </section>
+      <section id="contact-form">
+        <h2>Talk to Me!</h2>
+        <div class="center">
+          <button id="toggleFormBtn">Contact Form</button>
+        </div>
+        <div id="contactFormWrapper">
+          <form action="https://formspree.io/f/xzzgkpqd" method="post">
+            <label>
+              Your name:
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Rick Rooter"
+              />
+            </label>
+            <label>
+              Your email:
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="hiring_manager@your-organization.org"
+              />
+            </label>
+            <label>
+              Your message:
+              <textarea
+                name="message"
+                required
+                placeholder="Type your message here..."
+              ></textarea>
+            </label>
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from your portfolio"
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://cjobst01.github.io/digital-cv/thank-you.html"
+            />
+            <input type="text" name="_gotcha" style="display: none" />
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Chris Obst. All rights reserved.
+        <a
+          href="https://cjobst01.github.io/digital-cv/features/mazegame/maze.html"
+          >&#129370;</a
+        >
+      </p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <!-- Icons sourced from feathericons.com -->
+  </body>
+</html>
