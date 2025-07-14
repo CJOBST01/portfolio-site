@@ -10,15 +10,42 @@ body {
   background: linear-gradient(
     135deg,
     #eafff5 0%,
-    /* soft seafoam */ #c2f0e3 25%,
-    /* light mint */ #d4f1fa 50%,
-    /* pale blue */ #ffffff 100% /* clean white */
+    #c2f0e3 25%,
+    #d4f1fa 50%,
+    #ffffff 100%
   );
   color: #222;
   line-height: 1.6;
   padding: 20px;
+}
+
+.cv-wrapper {
   max-width: 900px;
   margin: auto;
+}
+
+/*************************************************/
+/*************** CV Hero Section *****************/
+/*************************************************/
+
+.cv-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cv-hero img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px auto;
+}
+
+.cv-hero p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 8px;
 }
 
 /* Headings */

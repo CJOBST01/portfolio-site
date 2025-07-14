@@ -16,22 +16,25 @@
     />
   </head>
   <body>
-    <header>
-      <!-- Shared site header -->
-      <header class="site-header">
-        <a href="index.html" class="brand">Chris Obst</a>
-        <nav class="site-nav" aria-label="Primary">
-          <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <h1>Chris Obst</h1>
+  <header class="site-header">
+    <a href="index.html" class="brand">Chris Obst</a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html" aria-current="page">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cv-wrapper">
+    <!-- Keep your name, image, and CV content inside this -->
+     <section class="cv-hero">
+    <h1>Chris Obst</h1>
+
       <img
-        src="images/imgforcv.jpg"
+        src="assets\images\imgforcv.jpg"
         alt="An image of Chris Obst"
         class="profile-img"
         width="200"
@@ -40,7 +43,7 @@
       <p>
         Election Administrator |
         <b>Full-Stack Web Developer <em>In Training</em></b>
-      </p>
+      </p></section>
       <nav>
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
@@ -283,20 +286,22 @@
           <li>
             Email:
             <a href="mailto:502chris502@gmail.com"
-              ><img src="images/mail.svg" alt="" /> 502chris502@gmail.com</a
+              ><img src="assets/icons/mail.svg" alt="" />
+              502chris502@gmail.com</a
             >
           </li>
           <li>
             LinkedIn:
             <a href="https://www.linkedin.com/in/christopher-obst-72bb23355/"
-              ><img src="images/linkedin.svg" alt="" />
+              ><img src="assets/icons/linkedin.svg" alt="" />
               LinkedIn.com/in/christopher-obst-72bb23355</a
             >
           </li>
           <li>
             GitHub:
             <a href="https://github.com/cjobst01"
-              ><img src="images/github.svg" alt="" /> github.com/CJOBST01</a
+              ><img src="assets/icons/github.svg" alt="" />
+              github.com/CJOBST01</a
             >
           </li>
           <!-- Icons are decorative enhancements; alt is left empty to avoid redundancy for screen readers -->
@@ -363,6 +368,7 @@
         >
       </p>
     </footer>
+    </div>
     <script src="scripts/main.js"></script>
     <!-- Icons sourced from feathericons.com -->
   </body>
